@@ -1,0 +1,318 @@
+.easter-egg {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: var(--content-padding);
+  color: var(--color-warm-text);
+  background:
+    radial-gradient(circle at 50% 45%, rgba(92, 168, 217, 0.18), transparent 26rem),
+    radial-gradient(circle at 22% 26%, rgba(143, 216, 255, 0.12), transparent 18rem),
+    linear-gradient(180deg, rgba(2, 4, 10, 0.88), rgba(3, 7, 17, 0.96));
+  pointer-events: none;
+  animation: easter-egg-overlay 8s ease forwards;
+}
+
+.easter-egg__particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.easter-egg__particle {
+  position: absolute;
+  bottom: -10vh;
+  width: clamp(5px, 1vw, 10px);
+  height: clamp(5px, 1vw, 10px);
+  border-radius: 50%;
+  background: var(--color-glow-blue);
+  box-shadow:
+    0 0 14px rgba(143, 216, 255, 0.9),
+    0 0 34px rgba(92, 168, 217, 0.42);
+  opacity: 0;
+  animation: easter-egg-particle 6.8s ease-in-out infinite;
+}
+
+.easter-egg__particle:nth-child(1) {
+  left: 7%;
+  animation-delay: 0.1s;
+  animation-duration: 6.2s;
+}
+
+.easter-egg__particle:nth-child(2) {
+  left: 13%;
+  animation-delay: 1.4s;
+  animation-duration: 7.1s;
+}
+
+.easter-egg__particle:nth-child(3) {
+  left: 19%;
+  animation-delay: 2.1s;
+  animation-duration: 5.7s;
+}
+
+.easter-egg__particle:nth-child(4) {
+  left: 26%;
+  animation-delay: 0.8s;
+  animation-duration: 6.9s;
+}
+
+.easter-egg__particle:nth-child(5) {
+  left: 34%;
+  animation-delay: 2.8s;
+  animation-duration: 7.4s;
+}
+
+.easter-egg__particle:nth-child(6) {
+  left: 41%;
+  animation-delay: 1.1s;
+  animation-duration: 5.9s;
+}
+
+.easter-egg__particle:nth-child(7) {
+  left: 48%;
+  animation-delay: 3.2s;
+  animation-duration: 6.6s;
+}
+
+.easter-egg__particle:nth-child(8) {
+  left: 55%;
+  animation-delay: 0.4s;
+  animation-duration: 7.6s;
+}
+
+.easter-egg__particle:nth-child(9) {
+  left: 62%;
+  animation-delay: 2.4s;
+  animation-duration: 6.1s;
+}
+
+.easter-egg__particle:nth-child(10) {
+  left: 68%;
+  animation-delay: 1.8s;
+  animation-duration: 7s;
+}
+
+.easter-egg__particle:nth-child(11) {
+  left: 74%;
+  animation-delay: 0.7s;
+  animation-duration: 5.8s;
+}
+
+.easter-egg__particle:nth-child(12) {
+  left: 81%;
+  animation-delay: 3.5s;
+  animation-duration: 7.8s;
+}
+
+.easter-egg__particle:nth-child(13) {
+  left: 88%;
+  animation-delay: 2.7s;
+  animation-duration: 6.5s;
+}
+
+.easter-egg__particle:nth-child(14) {
+  left: 93%;
+  animation-delay: 1.2s;
+  animation-duration: 7.2s;
+}
+
+.easter-egg__particle:nth-child(15) {
+  left: 30%;
+  animation-delay: 4s;
+  animation-duration: 6.4s;
+}
+
+.easter-egg__particle:nth-child(16) {
+  left: 45%;
+  animation-delay: 4.4s;
+  animation-duration: 7.3s;
+}
+
+.easter-egg__particle:nth-child(17) {
+  left: 71%;
+  animation-delay: 4.7s;
+  animation-duration: 6s;
+}
+
+.easter-egg__particle:nth-child(18) {
+  left: 85%;
+  animation-delay: 5.1s;
+  animation-duration: 7.5s;
+}
+
+.easter-egg__raven {
+  position: absolute;
+  top: clamp(18%, 26vw, 34%);
+  left: -170px;
+  width: 142px;
+  height: 72px;
+  filter: drop-shadow(0 0 18px rgba(143, 216, 255, 0.18));
+  animation: easter-egg-raven-flight 5.7s ease-in-out 0.8s forwards;
+}
+
+.easter-egg__body,
+.easter-egg__wing {
+  position: absolute;
+  display: block;
+  background: #03050c;
+}
+
+.easter-egg__body {
+  top: 28px;
+  left: 58px;
+  width: 42px;
+  height: 16px;
+  border-radius: 70% 35% 45% 70%;
+  transform: rotate(-4deg);
+}
+
+.easter-egg__body::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -14px;
+  width: 20px;
+  height: 8px;
+  background: #03050c;
+  clip-path: polygon(0 18%, 100% 50%, 0 82%);
+}
+
+.easter-egg__wing {
+  top: 17px;
+  width: 62px;
+  height: 34px;
+  clip-path: polygon(0 80%, 24% 0, 100% 72%, 70% 100%, 35% 82%);
+  transform-origin: 100% 70%;
+  animation: easter-egg-wing 640ms ease-in-out infinite;
+}
+
+.easter-egg__wing--left {
+  left: 10px;
+  transform: rotate(12deg);
+}
+
+.easter-egg__wing--right {
+  right: 4px;
+  transform: scaleX(-1) rotate(12deg);
+  transform-origin: 0 70%;
+}
+
+.easter-egg__message {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 760px);
+  color: var(--color-warm-text);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 4.6rem);
+  line-height: 1.18;
+  text-align: center;
+  text-shadow:
+    0 0 24px rgba(143, 216, 255, 0.34),
+    0 14px 52px rgba(0, 0, 0, 0.62);
+  opacity: 0;
+  animation: easter-egg-message 8s ease forwards;
+}
+
+@keyframes easter-egg-overlay {
+  0% {
+    opacity: 0;
+  }
+
+  10%,
+  88% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes easter-egg-message {
+  0%,
+  18% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  34%,
+  82% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes easter-egg-particle {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.72);
+  }
+
+  18%,
+  78% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(24px, -118vh, 0) scale(1.2);
+  }
+}
+
+@keyframes easter-egg-raven-flight {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.72) rotate(-8deg);
+  }
+
+  12%,
+  82% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(calc(100vw + 260px), 14vh, 0) scale(1.04) rotate(5deg);
+  }
+}
+
+@keyframes easter-egg-wing {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .easter-egg {
+    padding: 28px;
+  }
+
+  .easter-egg__raven {
+    top: 20%;
+    width: 112px;
+    height: 58px;
+  }
+
+  .easter-egg__body {
+    left: 46px;
+    width: 34px;
+  }
+
+  .easter-egg__wing {
+    width: 50px;
+    height: 28px;
+  }
+}
