@@ -1,11 +1,10 @@
-import { type AnimationEvent, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Footer.css';
 import yggdrasil from '../../assets/images/yggdrasil.png';
 
 const Footer = () => {
   const footerRef = useRef<HTMLElement | null>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [isTreeAnimationComplete, setIsTreeAnimationComplete] = useState(false);
 
   useEffect(() => {
     const footer = footerRef.current;
@@ -29,15 +28,6 @@ const Footer = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleTreeAnimationEnd = (event: AnimationEvent<HTMLImageElement>) => {
-    if (
-      event.animationName === 'yggdrasil-image-awaken'
-      && window.matchMedia('(max-width: 640px)').matches
-    ) {
-      setIsTreeAnimationComplete(true);
-    }
-  };
-
   return (
     <footer
       className={`footer-section${hasAnimated ? ' footer-section--visible' : ''}`}
@@ -58,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-section__tree-wrap" aria-hidden="true">
+      <div className="footer-section__tree-wrap">
         <div className="footer-section__particles">
           {Array.from({ length: 14 }, (_, index) => (
             <span className="footer-section__particle" key={index} />
@@ -67,11 +57,10 @@ const Footer = () => {
         <span className="footer-section__falling-star" />
 
         <img
-          className={`footer-section__tree${isTreeAnimationComplete ? ' footer-section__tree--complete' : ''}`}
+          className="footer-section__tree"
           src={yggdrasil}
-          alt=""
+          alt="Yggdrasil, livets tre"
           loading="lazy"
-          onAnimationEnd={handleTreeAnimationEnd}
         />
       </div>
 

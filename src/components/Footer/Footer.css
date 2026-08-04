@@ -116,18 +116,6 @@
   transform-origin: 50% 82%;
 }
 
-.footer-section__tree--complete {
-  opacity: 0.95;
-  transform: translate3d(0, 0, 0) scale(1);
-  -webkit-transform: translate3d(0, 0, 0) scale(1);
-  filter:
-    drop-shadow(0 0 28px rgba(143, 216, 255, 0.32))
-    drop-shadow(0 18px 46px rgba(0, 0, 0, 0.28));
-  -webkit-filter:
-    drop-shadow(0 0 28px rgba(143, 216, 255, 0.32))
-    drop-shadow(0 18px 46px rgba(0, 0, 0, 0.28));
-}
-
 .footer-section--visible .footer-section__tree {
   animation:
     yggdrasil-image-awaken 7.2s ease-out forwards,
@@ -389,20 +377,22 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .footer-section__tree-wrap {
     width: min(90vw, 340px);
   }
 
-  /* Avoid WebKit's filtered-image compositing bug after the reveal ends. */
+  .footer-section__tree,
   .footer-section--visible .footer-section__tree {
-    -webkit-animation: yggdrasil-image-awaken 7.2s ease-out forwards;
-    animation: yggdrasil-image-awaken 7.2s ease-out forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  .footer-section--visible .footer-section__tree--complete {
+    opacity: 0.95;
+    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    filter:
+      drop-shadow(0 0 28px rgba(143, 216, 255, 0.32))
+      drop-shadow(0 18px 46px rgba(0, 0, 0, 0.28));
+    -webkit-filter:
+      drop-shadow(0 0 28px rgba(143, 216, 255, 0.32))
+      drop-shadow(0 18px 46px rgba(0, 0, 0, 0.28));
     -webkit-animation: none;
     animation: none;
   }
