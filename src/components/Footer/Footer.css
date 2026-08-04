@@ -380,6 +380,11 @@
     width: min(90vw, 340px);
   }
 
+  /* Avoid WebKit's filtered-image compositing bug after the reveal ends. */
+  .footer-section--visible .footer-section__tree {
+    animation: yggdrasil-image-awaken 7.2s ease-out forwards;
+  }
+
   .footer-section__socials a {
     min-height: 40px;
   }
