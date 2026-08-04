@@ -3,7 +3,7 @@ import heroImage from '../../assets/hero.png';
 
 const Hero = () => {
   return (
-    <section className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
+    <section id="hjem" className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className="hero-section__overlay" />
       <div className="hero-section__content">
         <p className="hero-section__eyebrow">Velkommen</p>

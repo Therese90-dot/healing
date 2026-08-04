@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { type MouseEvent, useEffect, useState } from 'react';
 import './Header.css';
 
 const navItems = [
@@ -24,10 +24,17 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleHomeNavigation = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setIsMenuOpen(false);
+    window.history.replaceState(null, '', '#hjem');
+    document.getElementById('hjem')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
-    <header className={`site-header${isScrolled ? ' site-header--scrolled' : ''}`} id="hjem">
+    <header className={`site-header${isScrolled ? ' site-header--scrolled' : ''}`}>
       <nav className="site-header__nav" aria-label="Hovednavigasjon">
-        <a className="site-header__brand" href="#hjem" onClick={() => setIsMenuOpen(false)}>
+        <a className="site-header__brand" href="#hjem" onClick={handleHomeNavigation}>
           <span className="site-header__mark" aria-hidden="true" />
           <span className="site-header__brand-text">Healing Sharon</span>
         </a>
@@ -54,7 +61,7 @@ const Header = () => {
               className="site-header__link"
               href={item.href}
               key={item.href}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={item.href === '#hjem' ? handleHomeNavigation : () => setIsMenuOpen(false)}
             >
               {item.label}
             </a>
