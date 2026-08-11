@@ -44,7 +44,7 @@ const EasterEgg = () => {
     const timer = window.setTimeout(() => {
       setIsActive(false);
       setClickCount(0);
-    }, 8000);
+    }, 4800);
 
     return () => window.clearTimeout(timer);
   }, [isActive]);
@@ -54,7 +54,7 @@ const EasterEgg = () => {
   }
 
   return (
-    <div className="easter-egg" aria-live="polite" aria-label="Magisk melding">
+    <div className="easter-egg" aria-hidden="true">
       <div className="easter-egg__particles" aria-hidden="true">
         {particles.map((particle) => (
           <span className="easter-egg__particle" key={particle} />
@@ -65,9 +65,6 @@ const EasterEgg = () => {
         <span className="easter-egg__body" />
         <span className="easter-egg__wing easter-egg__wing--right" />
       </div>
-      <p className="easter-egg__message">
-        Den som søker stillheten, finner ofte svarene.
-      </p>
     </div>
   );
 };
