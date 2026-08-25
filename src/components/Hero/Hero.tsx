@@ -19,6 +19,14 @@ const Hero = () => {
           <a className="hero-section__button hero-section__button--secondary" href="#om-healing">
             Les mer
           </a>
+          <a
+            className="hero-section__button hero-section__button--secondary"
+            href="https://www.instagram.com/healingsharon/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </section>

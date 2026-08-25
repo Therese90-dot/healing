@@ -14,13 +14,15 @@ const Contact = () => {
       </div>
 
       <div className="contact-section__details">
-        <a href="tel:+4700000000">Telefon: +47 00 00 00 00</a>
-        <a href="mailto:kontakt@healingsharon.no">
-          E-post: Testside@healingsharon.no
+        <a href="tel:+4790802054">Telefon: +47 908 02 054</a>
+
+        <a href="mailto:healing_sharon1@outlook.com">
+          E-post: healing_sharon1@outlook.com
         </a>
+
         <a
           className="contact-section__button"
-          href="mailto:kontakt@healingsharon.no"
+          href="mailto:healing_sharon1@outlook.com"
         >
           Send melding
         </a>

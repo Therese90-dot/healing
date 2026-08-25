@@ -24,6 +24,7 @@
 .footer-section__content,
 .footer-section__tree-wrap,
 .footer-section__quote,
+.footer-section__approval,
 .footer-section__copyright,
 .footer-section__crafted {
   position: relative;
@@ -40,7 +41,7 @@
 
 .footer-section__brand {
   margin: 0;
-  color: var(--color-warm-text);
+  color: #fff;
   font-family: var(--font-heading);
   font-size: clamp(2.1rem, 5vw, 4rem);
   line-height: 1.08;
@@ -67,6 +68,7 @@
   min-height: 42px;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   padding: 9px 18px;
   border: 1px solid rgba(143, 216, 255, 0.28);
   border-radius: 999px;
@@ -94,6 +96,12 @@
 .footer-section__socials a:focus-visible {
   outline: 2px solid rgba(143, 216, 255, 0.78);
   outline-offset: 5px;
+}
+
+.footer-section__social-icon {
+  display: block;
+  width: 34px;
+  height: 34px;
 }
 
 .footer-section__tree-wrap {
@@ -267,8 +275,27 @@
   text-shadow: 0 0 20px rgba(143, 216, 255, 0.18);
 }
 
+.footer-section__approval {
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.footer-section__approval p {
+  margin-bottom: 12px;
+  color: rgba(240, 222, 192, 0.82);
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+}
+
+.footer-section__approval img {
+  display: block;
+  width: min(100%, 270px);
+  height: auto;
+  margin-inline: auto;
+}
+
 .footer-section__copyright {
-  margin-top: 30px;
+  margin-top: 26px;
   color: rgba(199, 185, 159, 0.72);
   font-size: 0.92rem;
 }

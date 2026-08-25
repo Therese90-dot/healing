@@ -53,6 +53,123 @@
   margin-top: 18px;
 }
 
+.about-section__content--healing {
+  display: grid;
+  gap: clamp(26px, 3.5vw, 34px);
+}
+
+.about-section__content--healing p + p {
+  margin-top: 14px;
+}
+
+.about-section__intro,
+.about-section__sections,
+.about-section__quote,
+.about-section__note {
+  width: 100%;
+  max-width: 68ch;
+  margin-inline: auto;
+}
+
+.about-section__intro h2 {
+  margin-bottom: 18px;
+}
+
+.about-section__sections {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 30px);
+}
+
+.about-section__topic h3 {
+  margin-bottom: 12px;
+  color: var(--color-ice-blue);
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+}
+
+.about-section__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  color: var(--color-muted-text);
+  list-style: none;
+}
+
+.about-section__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(143, 216, 255, 0.14);
+  border-radius: 6px;
+  background: rgba(143, 216, 255, 0.035);
+  box-shadow: 0 8px 24px rgba(5, 9, 20, 0.16);
+}
+
+.about-section__list li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-glow-blue);
+  box-shadow: 0 0 10px rgba(143, 216, 255, 0.72);
+}
+
+.about-section__quote {
+  position: relative;
+  margin-block: 0;
+  padding: clamp(22px, 4vw, 30px);
+  border: 1px solid rgba(143, 216, 255, 0.18);
+  border-left: 2px solid rgba(143, 216, 255, 0.62);
+  border-radius: 6px;
+  background: rgba(143, 216, 255, 0.045);
+}
+
+.about-section__quote p {
+  color: var(--color-warm-text);
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.about-section__quote footer {
+  width: auto;
+  margin-top: 14px;
+  padding: 0;
+  border: 0;
+  color: var(--color-ice-blue);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.about-section__note {
+  padding-top: 18px;
+  border-top: 1px solid rgba(143, 216, 255, 0.12);
+  color: rgba(199, 185, 159, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .about-section__content--sharon p:not(.about-section__eyebrow) {
   max-width: 68ch;
+}
+
+@media (max-width: 680px) {
+  .about-section__content--healing {
+    gap: 26px;
+  }
+
+  .about-section__sections,
+  .about-section__list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-section__quote {
+    padding: 20px;
+  }
 }
