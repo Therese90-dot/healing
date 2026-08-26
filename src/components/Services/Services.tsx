@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Spirituell veiledning",
-    text: "En kombinasjon av enkel samtale og intuitivt energiarbeid, med rom for refleksjon, ro og kontakt med det som kjennes viktig for deg.",
+    text: "En kombinasjon av enkel samtale og intuitivt energiarbeid, med rom for refleksjon og kontakt med det som kjennes viktig for deg.",
     prices: [{ duration: "30 minutter", price: "650 kr" }],
   },
 ];
