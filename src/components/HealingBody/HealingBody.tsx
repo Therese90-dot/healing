@@ -1,4 +1,4 @@
-import healingBodyImage from "../../assets/images/healingbildeai.png";
+import healingBodyImage from "../../assets/images/healingbildeai2.png";
 import "./HealingBody.css";
 
 const bodyLayers = [
