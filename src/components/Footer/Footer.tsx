@@ -100,6 +100,9 @@ const Footer = () => {
       <p className="footer-section__crafted">
         Crafted with <span>💙</span> in Bergen
       </p>
+      <p className="footer-section__credit">
+        Design &amp; utvikling · Therese Tonning
+      </p>
     </footer>
   );
 };

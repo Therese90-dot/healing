@@ -1,0 +1,136 @@
+.healing-body {
+  width: min(100%, var(--page-max-width));
+  text-align: left;
+}
+
+.healing-body__layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(38px, 7vw, 84px);
+  align-items: start;
+}
+
+.healing-body__visual {
+  position: sticky;
+  top: clamp(88px, 10vw, 120px);
+  align-self: start;
+  margin: 0;
+  isolation: isolate;
+}
+
+.healing-body__visual::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 9% 4%;
+  border-radius: 48%;
+  background: rgba(118, 113, 214, 0.18);
+  filter: blur(34px);
+}
+
+.healing-body__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 760px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(92, 168, 217, 0.2));
+  -webkit-mask-image: radial-gradient(ellipse 66% 72% at center, #000 66%, transparent 100%);
+  mask-image: radial-gradient(ellipse 66% 72% at center, #000 66%, transparent 100%);
+}
+
+.healing-body__content {
+  min-width: 0;
+}
+
+.healing-body__intro {
+  width: auto;
+  margin: 0 0 clamp(28px, 4vw, 40px);
+  padding: 0;
+  border: 0;
+}
+
+.healing-body__eyebrow {
+  margin-bottom: 12px;
+  color: var(--color-ice-blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.healing-body h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+}
+
+.healing-body__intro > p:last-child,
+.healing-body__layer p {
+  font-size: clamp(1rem, 1.35vw, 1.08rem);
+}
+
+.healing-body__layers {
+  display: grid;
+  gap: 2px;
+}
+
+.healing-body__layer {
+  position: relative;
+  padding: clamp(19px, 2.5vw, 25px) clamp(18px, 3vw, 26px);
+  border-left: 1px solid rgba(143, 216, 255, 0.3);
+  background: linear-gradient(90deg, rgba(143, 216, 255, 0.055), transparent 88%);
+}
+
+.healing-body__layer::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-glow-blue);
+  box-shadow: 0 0 10px rgba(143, 216, 255, 0.68);
+}
+
+.healing-body__layer h3 {
+  margin-bottom: 10px;
+  color: var(--color-ice-blue);
+  font-size: clamp(1.28rem, 2vw, 1.55rem);
+}
+
+.healing-body__layer p + p {
+  margin-top: 8px;
+}
+
+@media (max-width: 820px) {
+  .healing-body__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 42px;
+  }
+
+  .healing-body__visual {
+    position: relative;
+    top: auto;
+    width: min(100%, 460px);
+    margin-inline: auto;
+  }
+
+  .healing-body__visual img {
+    max-height: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .healing-body__layout {
+    gap: 32px;
+  }
+
+  .healing-body__visual {
+    width: min(100%, 360px);
+  }
+
+  .healing-body__layer {
+    padding-inline: 17px 4px;
+  }
+}

@@ -4,11 +4,12 @@ const services = [
   {
     title: "Fjernhealing",
     text: "En rolig stund med nærvær, stillhet og myk energi. Timen gir deg tid til å lande, puste og vende oppmerksomheten innover. Du kan være hjemme i rolige omgivelser mens Sharon holder et trygt og varmt fokus under healing.",
-    prices: [{ duration: "45 minutter", price: "850 kr" }],
+    prices: [{ duration: "50 min", price: "950 kr" }],
   },
   {
     title: "Felleshealing",
     text: "En rolig healingstund der flere får mulighet til å motta healing samtidig, uansett hvor du befinner deg. Du kan være hjemme i trygge omgivelser og ta imot healingen i ro.",
+    note: "Fast dato kommer i 2027",
     prices: [{ duration: "30 minutter", price: "250 kr" }],
   },
   {
@@ -35,6 +36,9 @@ const Services = () => {
           <article className="services-section__card" key={service.title}>
             <h3>{service.title}</h3>
             <p>{service.text}</p>
+            {service.note && (
+              <p className="services-section__note">{service.note}</p>
+            )}
             {service.prices && (
               <dl
                 className="services-section__prices"
