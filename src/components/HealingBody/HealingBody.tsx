@@ -1,4 +1,3 @@
-import healingBodyImage from "../../assets/images/healingbildeai2.png";
 import "./HealingBody.css";
 
 const bodyLayers = [
@@ -39,10 +38,9 @@ const HealingBody = () => {
     <section className="healing-body" aria-labelledby="healing-body-heading">
       <div className="healing-body__layout">
         <figure className="healing-body__visual">
-          <img
-            src={healingBodyImage}
-            alt="Illustrasjon av en kvinne omgitt av flere lag med lys og aura"
-          />
+          <div className="healing-body__image-placeholder" role="img" aria-label="Bilde kommer snart">
+            <span>Bilde kommer snart</span>
+          </div>
         </figure>
 
         <div className="healing-body__content">
