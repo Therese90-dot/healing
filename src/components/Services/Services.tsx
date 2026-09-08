@@ -13,9 +13,7 @@ const services = [
     prices: [{ duration: "30 minutter", price: "250 kr" }],
   },
   {
-    title: "Spirituell veiledning",
-    text: "En kombinasjon av enkel samtale og intuitivt energiarbeid, med rom for refleksjon og kontakt med det som kjennes viktig for deg.",
-    prices: [{ duration: "30 minutter", price: "650 kr" }],
+    title: "Informasjon om åpen healingdag – kommer",
   },
 ];
 
@@ -35,7 +33,7 @@ const Services = () => {
         {services.map((service) => (
           <article className="services-section__card" key={service.title}>
             <h3>{service.title}</h3>
-            <p>{service.text}</p>
+            {service.text && <p>{service.text}</p>}
             {service.note && (
               <p className="services-section__note">{service.note}</p>
             )}
