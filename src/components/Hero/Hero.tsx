@@ -1,5 +1,6 @@
 import './Hero.css';
 import heroImage from '../../assets/hero.png';
+import InstagramIcon from '../InstagramIcon';
 
 const Hero = () => {
   return (
@@ -21,10 +22,17 @@ const Hero = () => {
           </a>
           <a
             className="hero-section__button hero-section__button--secondary"
+            href="#energetiske-lag"
+          >
+            Les om kroppens energiske lag
+          </a>
+          <a
+            className="hero-section__button hero-section__button--secondary"
             href="https://www.instagram.com/healingsharon/"
             target="_blank"
             rel="noopener noreferrer"
           >
+            <InstagramIcon className="hero-section__instagram-icon" />
             Instagram
           </a>
         </div>

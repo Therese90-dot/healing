@@ -4,7 +4,7 @@
   gap: clamp(28px, 5vw, 64px);
   align-items: start;
   width: 100%;
-  max-width: 880px;
+  max-width: var(--page-max-width);
   margin-inline: auto;
   text-align: left;
 }
@@ -67,7 +67,7 @@
 .about-section__quote,
 .about-section__note {
   width: 100%;
-  max-width: 68ch;
+  max-width: 76ch;
   margin-inline: auto;
 }
 
@@ -79,6 +79,13 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(22px, 3vw, 30px);
+}
+
+.about-section__topic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .about-section__topic h3 {
@@ -156,7 +163,51 @@
 }
 
 .about-section__content--sharon p:not(.about-section__eyebrow) {
-  max-width: 68ch;
+  max-width: 72ch;
+}
+
+.about-section__content--sharon {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 0.48fr);
+  gap: clamp(30px, 5vw, 52px);
+  align-items: start;
+}
+
+.about-section__sharon-text {
+  min-width: 0;
+}
+
+.about-section__sharon-portrait {
+  position: sticky;
+  top: clamp(88px, 10vw, 120px);
+  margin: 0;
+}
+
+.about-section__sharon-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid rgba(143, 216, 255, 0.24);
+  border-radius: 42% 42% 10px 10px;
+  box-shadow: 0 18px 42px rgba(5, 9, 20, 0.34), 0 0 24px rgba(143, 216, 255, 0.1);
+}
+
+@media (max-width: 820px) {
+  .about-section__content--sharon {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-section__sharon-portrait {
+    position: relative;
+    top: auto;
+    order: -1;
+    width: min(100%, 320px);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 680px) {

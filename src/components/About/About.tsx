@@ -1,4 +1,5 @@
 import "./About.css";
+import sharonImage from "../../assets/images/sharon.png";
 
 const About = () => {
   return (
@@ -108,6 +109,7 @@ const About = () => {
         className="about-section__content about-section__content--sharon"
         id="om-sharon"
       >
+        <div className="about-section__sharon-text">
         <p className="about-section__eyebrow">Mennesket bak</p>
         <h2>Om Sharon Cecilie</h2>
         <p>Mitt navn er Sharon Cecilie Rinde, og jeg er godkjent healer.</p>
@@ -169,6 +171,11 @@ const About = () => {
           <br />
           Sharon Cecilie Rinde
         </p>
+        </div>
+
+        <figure className="about-section__sharon-portrait">
+          <img src={sharonImage} alt="Sharon Cecilie Rinde" />
+        </figure>
       </div>
     </section>
   );
