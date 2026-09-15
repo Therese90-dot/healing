@@ -3,7 +3,7 @@ import "./Services.css";
 const services = [
   {
     title: "Fjernhealing",
-    text: "En rolig stund med nærvær, stillhet og myk energi. Timen gir deg tid til å lande, puste og vende oppmerksomheten innover. Du kan være hjemme i rolige omgivelser mens Sharon holder et trygt og varmt fokus under healing.",
+    text: "En stund med nærvær, stillhet og healing. Du kan være hjemme å lande i rolige omgivelser og motta healing energi der du er mens Sharon holder et trygt og varmt fokus under healingen.",
     prices: [{ duration: "50 min", price: "950 kr" }],
   },
   {

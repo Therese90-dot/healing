@@ -1,5 +1,4 @@
 import "./HealingBody.css";
-import healingAura from "../../assets/images/healingaura.png";
 
 const bodyLayers = [
   {
@@ -42,14 +41,6 @@ const HealingBody = () => {
       aria-labelledby="healing-body-heading"
     >
       <div className="healing-body__layout">
-        <figure className="healing-body__visual">
-          <img
-            className="healing-body__image"
-            src={healingAura}
-            alt="Kvinne omgitt av lysende energilag i auraen"
-          />
-        </figure>
-
         <div className="healing-body__content">
           <header className="healing-body__intro">
             <p className="healing-body__eyebrow">Kroppens energiske lag</p>

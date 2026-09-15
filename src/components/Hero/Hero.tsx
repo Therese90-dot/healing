@@ -22,12 +22,6 @@ const Hero = () => {
           </a>
           <a
             className="hero-section__button hero-section__button--secondary"
-            href="#energetiske-lag"
-          >
-            Les om kroppens energiske lag
-          </a>
-          <a
-            className="hero-section__button hero-section__button--secondary"
             href="https://www.instagram.com/healingsharon/"
             target="_blank"
             rel="noopener noreferrer"
