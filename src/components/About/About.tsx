@@ -110,67 +110,68 @@ const About = () => {
         id="om-sharon"
       >
         <div className="about-section__sharon-text">
-        <p className="about-section__eyebrow">Mennesket bak</p>
-        <h2>Om Sharon Cecilie</h2>
-        <p>Mitt navn er Sharon Cecilie Rinde, og jeg er godkjent healer.</p>
-        <p>
-          Min reise som healer startet i 2018 da jeg kom i kontakt med noe som
-          er mye større enn meg selv. På veien ble jeg vist en stor kjærlighet
-          som gjør at det er vanskelig å beskrive med ord.
-        </p>
-        <p>
-          Å komme hjem til den dypeste og reneste kjærligheten må være det
-          nærmeste jeg kommer en beskrivelse. I dette lyset av takknemmelighet
-          ble jeg vist hvordan ting henger sammen, og hvordan jeg kunne få
-          muligheten til å hjelpe andre mennesker med å komme i en dypere
-          kontakt, harmoni og trygghet i seg selv.
-        </p>
-        <p>
-          Helt siden jeg var liten har jeg vært veldig opptatt av det å være et
-          menneske her på jorden, og jeg kunne ofte gå litt utenfor den «normale
-          strømmen», kan man si.
-        </p>
-        <p>
-          Jeg kunne stirre dypt opp på stjernene på kveldstid og undre meg over
-          hvor vi kommer fra. Jeg hadde som liten allerede en indre forståelse
-          av den gode kraften som er rundt og i oss alle, men som vi til tider
-          kan miste litt kontakt med på livets vei.
-        </p>
-        <p>
-          Det var ikke før senere i livet at jeg skulle få muligheten til å
-          forstå den dypere meningen med den.
-        </p>
-        <p>
-          Etter kontakten med den universelle kraften forstod jeg at dette var
-          en retning jeg skulle gå.
-        </p>
-        <p>
-          Jeg begynte med egenstudie innenfor det fysiske og spirituelle. Jeg
-          fikk også interesse for biologi, epigenetikk, energihealing og hvorfor
-          ånd og sjel henger sammen som en sentral og viktig del av det å være
-          et menneske.
-        </p>
-        <p>
-          Jo mer jeg søkte og lærte, desto mer økte min kunnskap om mennesket ,
-          healing og det åndelige. I den spirituelle verden er det alltid nye
-          ting å lære og gleden med å kunne hjelpe andre mennesker til å få en
-          dypere kontakt med seg selv og sin egen kraft, er en stor motivasjon
-          for meg.
-        </p>
-        <p>
-          Å kunne tilby healing er noe jeg gjør med glede og kjærlighet. Det
-          fineste jeg vet, er å motta positive tilbakemeldinger og høre hvordan
-          healingen har vært til hjelp.
-        </p>
-        <p>
-          Tusen takk for at du leste om min historie – og hjertelig velkommen
-          til healing hos meg.
-        </p>
-        <p>
-          Lys og kjærlighet
-          <br />
-          Sharon Cecilie Rinde
-        </p>
+          <p className="about-section__eyebrow">Mennesket bak</p>
+          <h2>Om Sharon Cecilie</h2>
+          <p>Mitt navn er Sharon Cecilie Rinde, og jeg er godkjent healer.</p>
+          <p>
+            Min reise som healer startet i 2018 da jeg kom i kontakt med noe som
+            er mye større enn meg selv. På veien ble jeg vist en stor kjærlighet
+            som gjør at det er vanskelig å beskrive med ord.
+          </p>
+          <p>
+            Å komme hjem til den dypeste og reneste kjærligheten må være det
+            nærmeste jeg kommer en beskrivelse. I dette lyset av takknemmelighet
+            ble jeg vist hvordan ting henger sammen, og hvordan jeg kunne få
+            muligheten til å hjelpe andre mennesker med å komme i en dypere
+            kontakt, harmoni og trygghet i seg selv.
+          </p>
+          <p>
+            Helt siden jeg var liten har jeg vært veldig opptatt av det å være
+            et menneske her på jorden, og jeg kunne ofte gå litt utenfor den
+            «normale strømmen», kan man si.
+          </p>
+          <p>
+            Jeg kunne stirre dypt opp på stjernene på kveldstid og undre meg
+            over hvor vi kommer fra. Jeg hadde som liten allerede en indre
+            forståelse av den gode kraften som er rundt og i oss alle, men som
+            vi til tider kan miste litt kontakt med på livets vei.
+          </p>
+          <p>
+            Det var ikke før senere i livet at jeg skulle få muligheten til å
+            forstå den dypere meningen med den.
+          </p>
+          <p>
+            Etter kontakten med den universelle kraften forstod jeg at dette var
+            en retning jeg skulle gå.
+          </p>
+          <p>
+            Jeg begynnte med egenstudie innenfor det fysiske og spirituelle. Det
+            var få steder å oppsøke da jeg åpnet opp for det åndelige og dermed
+            gikk min interesse og fokus på biologi, epigenetikk og energihealing
+            for å lære det jeg kunne om hvordan kropp og sjel henger sammen som
+            en viktig og del av det å være et menneske.
+          </p>
+          <p>
+            Jo mer jeg søkte og lærte, desto mer økte min kunnskap om mennesket
+            , healing og det åndelige. I den spirituelle verden er det alltid
+            nye ting å lære og gleden med å kunne hjelpe andre mennesker til å
+            få en dypere kontakt med seg selv og sin egen kraft, er en stor
+            motivasjon for meg.
+          </p>
+          <p>
+            Å kunne tilby healing er noe jeg gjør med glede og kjærlighet. Det
+            fineste jeg vet, er å motta positive tilbakemeldinger og høre
+            hvordan healingen har vært til hjelp.
+          </p>
+          <p>
+            Tusen takk for at du leste om min historie – og hjertelig velkommen
+            til healing hos meg.
+          </p>
+          <p>
+            Lys og kjærlighet
+            <br />
+            Sharon Cecilie Rinde
+          </p>
         </div>
 
         <figure className="about-section__sharon-portrait">

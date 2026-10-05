@@ -27,8 +27,8 @@ const bodyLayers = [
     title: "Den spirituelle kroppen",
     paragraphs: [
       "Den spirituelle kroppen er vår sjelelige del og har med vår åndelighet å gjøre.",
-      "Når healing går til denne delen av oss vil det kunne hjelpe oss til å komme i bedre kontakt med vår egen sjel, slippe frykt og spesielt frykt i forhold til sykdom og død.",
-      "Den kan hjelpe oss inn i en hellig stemning og en dypere og tryggere kontakt i oss selv.",
+      "Når healing går til denne delen av oss vil det kunne hjelpe oss til å komme i bedre kontakt med vår egen sjel og slippe frykt og uro.",
+      "Det kan hjelpe oss inn i en balansert steming og dypere trygghet og kontakt med oss selv.",
     ],
   },
 ];

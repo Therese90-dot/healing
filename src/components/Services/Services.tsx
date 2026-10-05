@@ -4,7 +4,7 @@ const services = [
   {
     title: "Fjernhealing",
     text: "En stund med nærvær, stillhet og healing. Du kan være hjemme å lande i rolige omgivelser og motta healing energi der du er mens Sharon holder et trygt og varmt fokus under healingen.",
-    prices: [{ duration: "50 min", price: "Donasjon" }],
+    prices: [{ duration: "", price: "Donasjon" }],
   },
   {
     title: "Felleshealing",
