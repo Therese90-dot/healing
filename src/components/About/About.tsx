@@ -1,5 +1,5 @@
 import "./About.css";
-import sharonImage from "../../assets/images/sharon.png";
+import sharonImage from "../../assets/images/Portrett uten halskjede.png";
 
 const About = () => {
   return (
